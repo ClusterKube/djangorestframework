@@ -1,0 +1,20 @@
+// Create your app Django
+
+create a py_client folder inside create a file basic.py
+use this API concept :
+
+import requests # is Request 
+
+endpoint = " http://localhost:8000"  # this is Endpoint that you can use how many you will need
+
+get_response = requests.get(endpoint, json = {"query": "Youtube"}) # API --> Method for Application programming interface, this is a Lybrary API not REST API is Like WebAPI
+print(get_response.text) # printing raws text Response 
+
+# print(get_response.json) # This will print json format 
+
+
+// Command for create a API
+python manage.py startapp  api  
+
+// Go in settings.py and add in APPS the name API of your folder .
+
